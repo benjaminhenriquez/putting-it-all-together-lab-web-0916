@@ -1,4 +1,5 @@
 import React from 'react'
+// const React = require('react')
 import { shallow, mount } from 'enzyme'
 import expect, { createSpy, spyOn, isSpy } from 'expect'
 import ReactTestUtils from 'react-addons-test-utils'
@@ -78,6 +79,7 @@ describe('Blackjack:', function(){
   before(function(){
     expect(createStore).toBeA('function', 'store not created')
     store = createStore(blackjackReducer)
+    debugger
   })
 
   describe('`fetchDeck()`', function(){

@@ -1,6 +1,9 @@
+// import blackjackReducer from '../src/reducers/blackjack_reducer.js'
+
 export const createStore = (reducer) => {
   let state;
   let listeners = [];
+
   const getState = () => state;
 
   const dispatch = (action) => {
@@ -13,6 +16,7 @@ export const createStore = (reducer) => {
   };
 
   dispatch({});
+
   return {
     getState: getState,
     dispatch: dispatch,
